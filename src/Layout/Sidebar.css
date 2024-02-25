@@ -1,0 +1,30 @@
+/* Sidebar.css */
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 200px; /* Set the width of the sidebar */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Hide the sidebar */
+.sidebar.hide {
+  transform: translateX(-100%);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding: 10px;
+    width: 150px; /* Adjust the width for smaller screens */
+  }
+
+  .sidebar h2 {
+    margin-top: 0;
+  }
+
+  .sidebar ul {
+    padding-left: 20px;
+  }
+}
